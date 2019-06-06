@@ -5,23 +5,27 @@ using UnityEngine.Events;
 
 public class GameManeger : MonoBehaviour {
 
+    [SerializeField]
     private TextUI textUI;
 
-    private SnakeMove snakeMove;
+    [SerializeField]
+    private Snake snake;
 
+    [SerializeField]
     private FoodSpawn foodSpawn;
 
+    [SerializeField]
     private SFoodSpawn1 sFoodSpawn1;
 
     void Snake_OnCollision (BaseObject baseObject)
     {
-        //if (baseObject is Border)
+        if (baseObject is Border)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
         }
-       // if (baseObject is Food)
+        //if (baseObject is Food)
         {
-            // foodSpawn.Spawn();
+            //foodSpawn.Spawn();
             //score++;
         }
         // if (baseObject is SpecialFood1)

@@ -12,6 +12,7 @@ public class BaseObject : MonoBehaviour {
 		
 	}
 	
+	
 	void Update () {
 		
 	}

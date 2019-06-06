@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27994b1b678b55e48a1f72982cb8e472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tailObjects: []
   TailPrefab: {fileID: 1190746162999350, guid: af3947787ff50e84caafe60b851a736d, type: 2}
+  tailTargetObj: {fileID: 0}
 --- !u!135 &135948195908237806
 SphereCollider:
   m_ObjectHideFlags: 1

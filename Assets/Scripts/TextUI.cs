@@ -9,13 +9,16 @@ public class TextUI : MonoBehaviour {
     public Text ScoreText;
 
     void Start () {
-		
-	}
+        
+    }
 	
 
 	void Update () {
 
-        ScoreText.text = score.ToString();
+    }
 
+    void Text ()
+    {
+        ScoreText.text = score.ToString();
     }
 }

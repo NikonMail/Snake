@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23212387083730006}
   - component: {fileID: 135236889335644062}
   - component: {fileID: 114872505936887910}
-  - component: {fileID: 114108167665046680}
   m_Layer: 0
   m_Name: SnakeTail
   m_TagString: Untagged
@@ -86,19 +85,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190746162999350}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114108167665046680
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1190746162999350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27994b1b678b55e48a1f72982cb8e472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tailObjects: []
-  TailPrefab: {fileID: 0}
 --- !u!114 &114872505936887910
 MonoBehaviour:
   m_ObjectHideFlags: 1
