@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 33187726422163604}
   - component: {fileID: 23212387083730006}
   - component: {fileID: 135236889335644062}
-  - component: {fileID: 114872505936887910}
+  - component: {fileID: 114440473656103432}
+  - component: {fileID: 114785174352486580}
   m_Layer: 0
   m_Name: SnakeTail
   m_TagString: Untagged
@@ -85,7 +86,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190746162999350}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114872505936887910
+--- !u!114 &114440473656103432
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,11 +94,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1190746162999350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27994b1b678b55e48a1f72982cb8e472, type: 3}
+  m_Script: {fileID: 11500000, guid: 296e8c35b83ed4840bd9e8a6f1ca3e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tailObjects: []
-  TailPrefab: {fileID: 0}
+  tailPrefab: {fileID: 1190746162999350}
+--- !u!114 &114785174352486580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190746162999350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eec9b3838833364e9372d28fc943c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135236889335644062
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -105,7 +116,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190746162999350}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

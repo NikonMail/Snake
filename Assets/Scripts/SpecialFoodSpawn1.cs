@@ -8,10 +8,11 @@ public class SpecialFoodSpawn1 : MonoBehaviour
     private float height = 9f;
     private float startTime;
 
-    public GameObject foodPrefab;
-    public GameObject currentFood;
+    [SerializeField]
+    private GameObject foodPrefab;
+    private GameObject currentFood;
 
-    private IEnumerator Spawn ()
+    public IEnumerator Spawn ()
     {
         while (true)
         {

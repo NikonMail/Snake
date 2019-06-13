@@ -19,7 +19,7 @@ public class Snake : MonoBehaviour
     private GameObject tailPrefab;
 
     private float speed = 0.07f;
-    private float distance = 1f;
+    private float distance = 0.5f;
 
     private bool vertical = false;
     private bool horizontal = true;

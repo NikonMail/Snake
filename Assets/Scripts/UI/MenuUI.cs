@@ -1,16 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MenuUI : MonoBehaviour {
+public class MenuUI : MonoBehaviour
+{
+    [SerializeField]
+    private Button start;
 
-    public void StartGame()
+    [SerializeField]
+    private Button setting;
+
+    [SerializeField]
+    private Button exit;
+
+    private void NewGame ()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene (1);
     }
 
-    public void ExitGame()
+    private void SettingGame()
     {
-        UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(0);
+        
+    }
+
+    private void ExitGame () 
+    {
+        Application.Quit();
+    }
+
+    private void Start ()
+    {
+        start.onClick.AddListener (NewGame);
+        //setting.onClick.AddListener(SettingGame);
+        exit.onClick.AddListener (ExitGame);
     }
 }
